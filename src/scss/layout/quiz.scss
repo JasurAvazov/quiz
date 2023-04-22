@@ -38,6 +38,7 @@
     background-color: white;
     border-radius: 24px;
     padding: 32px;
+    padding-bottom: 114px;
     position: relative;
 }
 .question {
@@ -133,11 +134,11 @@
         font-weight: 400;
         border-radius: 10px;
         cursor: pointer;
-        &[disabled]{
+        &.disabled{
             opacity: 0.5;
             cursor: default;
         }
-        &-prev[disabled]{
+        &-prev.disabled{
             opacity: 0;
             pointer-events: none;
         }

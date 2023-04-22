@@ -211,6 +211,7 @@
   background-color: white;
   border-radius: 24px;
   padding: 32px;
+  padding-bottom: 114px;
   position: relative;
 }
 
@@ -354,12 +355,12 @@
   cursor: pointer;
 }
 
-.btns .btn[disabled] {
+.btns .btn.disabled {
   opacity: 0.5;
   cursor: default;
 }
 
-.btns .btn-prev[disabled] {
+.btns .btn-prev.disabled {
   opacity: 0;
   pointer-events: none;
 }

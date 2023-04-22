@@ -17,8 +17,9 @@ export function init() {
     let currentQuestion = 0;
 
     btnNext.addEventListener('click', () => {
-        if (currentQuestion > 0){
-            // тут нужно выключить btnPrev
+        if (currentQuestion > -1){
+            console.log("hi");
+            btnPrev.classList.remove('disabled')
         }
 
         const currentAnswer = getSelectedAnswer();
@@ -35,6 +36,7 @@ export function init() {
 
         if (currentQuestion === questions.length) {
             sendData();
+            btnPrev.classList.add('disabled')
             return;
         }
         questions[currentQuestion].classList.add('active');
@@ -44,7 +46,7 @@ export function init() {
 
     btnPrev.addEventListener('click', () => {
         if (currentQuestion < 2){
-            btnPrev.setAttribute('disabled', '');
+            btnPrev.classList.add('disabled')
         }
 
         questions[currentQuestion].classList.remove('active');
@@ -95,8 +97,8 @@ export function init() {
             if (prevAnswer) {
             for (let i = 0; i < radios.length; i++) {
                 if (radios[i].value === prevAnswer) {
-                radios[i].checked = true;
-                break;
+                    radios[i].checked = true;
+                    break;
                 }
             }
             }
@@ -107,7 +109,7 @@ export function init() {
         if (select) {
             const prevAnswer = localStorage.getItem(`question-${currentQuestion-1}`);
             if (prevAnswer) {
-            select.value = prevAnswer;
+                select.value = prevAnswer;
             }
         }
     }
@@ -132,7 +134,7 @@ export function init() {
             radio.addEventListener('change', () => {
                 localStorage.setItem(`question-${currentQuestion}`, radio.value);
 
-                btnNext.removeAttribute('disabled');
+                btnNext.classList.remove('disabled');
             });
         });
     }
@@ -141,7 +143,7 @@ export function init() {
         select.addEventListener('change', () => {
             localStorage.setItem(`question-${currentQuestion}`, select.value);
 
-            btnNext.removeAttribute('disabled');
+            btnNext.classList.remove('disabled');
         });
     }
     });
