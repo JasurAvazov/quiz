@@ -1,0 +1,153 @@
+mixin quiz()
+    main
+        .container 
+            .calltoaction
+                .calltoaction-top
+                    h1.calltoaction-title Подберём вуз мечты
+                    p.calltoaction-text Ответьте на 8 простых вопросов, и мы составим список наболее подходящих для вас вузов
+                .calltoaction-img
+                    img(src="@img/calltoaction.png", alt="" draggable="false")
+            .quiz
+                .question
+                    .question__top
+                        h2.question__top-title Для кого вы ищете учебное заведение?
+                        p.question__top-counter Шаг 
+                            span.question__top-counter-current 
+                            span.question__top-counter-overall
+                    .answers
+                        label.answers-radio
+                            input(type="radio" name="q1" value="ответ1") 
+                            p ответ1
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q1" value="ответ2") 
+                            p ответ2
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q1" value="ответ3")
+                            p ответ3
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q1" value="ответ4") 
+                            p ответ4
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q1" value="ответ5") 
+                            p ответ5
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q1" value="ответ6")
+                            p ответ6
+                            .dot 
+                .question
+                    .question__top
+                        h2.question__top-title что вы делаете когда скучно
+                        p.question__top-counter Шаг 
+                            span.question__top-counter-current 
+                            span.question__top-counter-overall
+                    .select 
+                        button(type="button").select-tab
+                            .select-text
+                                p.select-subtitle Город
+                                p.selected Выберите
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="#9B9B9B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        .options
+                            label.option.active
+                                input(type="radio" name="q2" value="Санкт-Петербург")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p Санкт-Петербург
+                            label.option
+                                input(type="radio" name="q2" value="ответ6")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p 31231231
+                            label.option
+                                input(type="radio" name="q2" value="ответ6")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p dasdadsad
+                            label.option
+                                input(type="radio" name="q2" value="ответ6")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p dasda3123
+                            label.option
+                                input(type="radio" name="q2" value="ответ6")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p dasda
+
+                .question
+                    .question__top
+                        h2.question__top-title Для кого вы ищете учебное заведение?
+                        p.question__top-counter Шаг 
+                            span.question__top-counter-current 
+                            span.question__top-counter-overall
+                    .answers
+                        label.answers-radio
+                            input(type="radio" name="q3" value="ответ1") 
+                            p ответ1
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q3" value="ответ2") 
+                            p ответ2
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q3" value="ответ3")
+                            p ответ3
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q3" value="ответ4") 
+                            p ответ4
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q3" value="ответ5") 
+                            p ответ5
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q3" value="ответ6")
+                            p ответ6
+                            .dot 
+                .question
+                    .question__top
+                        h2.question__top-title Для кого вы ищете учебное заведение?
+                        p.question__top-counter Шаг 
+                            span.question__top-counter-current 
+                            span.question__top-counter-overall
+                    .answers.list
+                        label.answers-radio
+                            input(type="radio" name="q4" value="ответ1") 
+                            p ответ1
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q4" value="ответ2") 
+                            p ответ2
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q4" value="ответ3")
+                            p ответ3
+                            .dot 
+                .btns 
+                    button(type="button").btn-prev.btn.disabled
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 13.5L5.5 8.5L10.5 3.5" stroke="#383838" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        p Назад
+                    button(type="button").btn-next.btn.disabled
+                        p Далее 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 3.5L10.5 8.5L5.5 13.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>

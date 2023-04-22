@@ -2,8 +2,19 @@ export function init() {
     const questions = document.querySelectorAll('.question');
     const btnNext = document.querySelector('.btn-next');
     const btnPrev = document.querySelector('.btn-prev');
-    const counterCurrent = document.querySelectorAll('.current')
-    const counterAll = document.querySelectorAll('.all')
+    const counterCurrent = document.querySelectorAll('.question__top-counter-current')
+    const counterAll = document.querySelectorAll('.question__top-counter-overall')
+
+    const radios = document.querySelectorAll('input[type=radio]')
+    radios.forEach(el => {
+        el.addEventListener("click", () => {
+            const parent = el.parentElement
+            radios.forEach(all => {
+                all.parentElement.classList.remove('active')
+            })
+            parent.classList.add("active")
+        })
+    })
 
     counterCurrent.forEach(el => {
         el.innerHTML = 1
@@ -17,29 +28,29 @@ export function init() {
     let currentQuestion = 0;
 
     btnNext.addEventListener('click', () => {
-        if (currentQuestion > -1){
-            console.log("hi");
+        if (currentQuestion <= 0) {
             btnPrev.classList.remove('disabled')
         }
-
-        const currentAnswer = getSelectedAnswer();
-
-        if (!currentAnswer) {
-            return;
-        }
+        
         questions[currentQuestion].classList.remove('active');
 
         currentQuestion++;
         counterCurrent.forEach(el => {
             el.innerHTML = currentQuestion+1
         })
-
+        
         if (currentQuestion === questions.length) {
-            sendData();
             btnPrev.classList.add('disabled')
+            sendData();
             return;
         }
         questions[currentQuestion].classList.add('active');
+        const currentAnswer = getSelectedAnswer();
+        
+        if (!currentAnswer) {
+            btnNext.classList.add('disabled')
+            return;
+        }
 
         restoreSelectedAnswer();
     });
@@ -48,7 +59,7 @@ export function init() {
         if (currentQuestion < 2){
             btnPrev.classList.add('disabled')
         }
-
+        btnNext.classList.remove('disabled')
         questions[currentQuestion].classList.remove('active');
 
         currentQuestion--;
@@ -95,12 +106,12 @@ export function init() {
         if (radios.length > 0) {
             const prevAnswer = localStorage.getItem(`question-${currentQuestion-1}`);
             if (prevAnswer) {
-            for (let i = 0; i < radios.length; i++) {
-                if (radios[i].value === prevAnswer) {
-                    radios[i].checked = true;
-                    break;
+                for (let i = 0; i < radios.length; i++) {
+                    if (radios[i].value === prevAnswer) {
+                        radios[i].checked = true;
+                        break;
+                    }
                 }
-            }
             }
         }
     
@@ -114,15 +125,66 @@ export function init() {
         }
     }
 
+    
+
     function sendData() {
-        // Здесь можно использовать fetch или XMLHttpRequest для отправки данных на сервер
+        const data = {};
+        questions.forEach((question, index) => {
+            const radios = question.querySelectorAll('input[type="radio"]');
+            const select = question.querySelector('select');
+            const answerKey = `question-${index}`;
         
-        alert('Данные успешно отправлены!');
-        counterCurrent.forEach(el => {
-            el.innerHTML = 1
+            if (radios.length > 0) {
+                radios.forEach((radio) => {
+                    if (radio.checked) {
+                        data[answerKey] = radio.value;
+                    }
+                });
+            }
+        
+            if (select && select.value) {
+                data[answerKey] = select.value;
+            }
+        });
+
+        console.log("data =>",data);
+
+        fetch('http://localhost:3000/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
         })
-        currentQuestion = 0;
-        questions[currentQuestion].classList.add('active');
+        .then(response => {
+            if (response.ok) {
+                alert('Данные успешно отправлены!');
+                counterCurrent.forEach(el => {
+                    el.innerHTML = 1
+                })
+                currentQuestion = 0;
+                questions[currentQuestion].classList.add('active');
+                location.reload();
+            } else {
+                alert('Ошибка отправки данных!');
+                counterCurrent.forEach(el => {
+                    el.innerHTML = 1
+                })
+                currentQuestion = 0;
+                questions[currentQuestion].classList.add('active');
+                location.reload();
+            }
+        })
+        .catch(error => {
+            alert('Ошибка отправки данных!');
+            console.error(error);
+            counterCurrent.forEach(el => {
+                el.innerHTML = 1
+            })
+            currentQuestion = 0;
+            questions[currentQuestion].classList.add('active');
+            location.reload();
+        });
     }
 
     questions.forEach((question) => {

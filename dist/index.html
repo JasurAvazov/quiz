@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230422181111">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230422224135">
     <title>Document</title>
   </head>
   <body> 
     <div class="wrapper"> 
-      <main class="main"> 
+      <main>
         <div class="container"> 
           <div class="calltoaction">
             <div class="calltoaction-top">
@@ -22,35 +22,35 @@
             <div class="question">
               <div class="question__top">
                 <h2 class="question__top-title">Для кого вы ищете учебное заведение?</h2>
-                <p class="question__top-counter">Шаг <span class="current">1</span><span class="all">0</span></p>
+                <p class="question__top-counter">Шаг <span class="question__top-counter-current"> </span><span class="question__top-counter-overall"></span></p>
               </div>
               <div class="answers">
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q1" value="ответ1"/>
                   <p>ответ1</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q1" value="ответ2"/>
                   <p>ответ2</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q1" value="ответ3"/>
                   <p>ответ3</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q1" value="ответ4"/>
                   <p>ответ4</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q1" value="ответ5"/>
                   <p>ответ5</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q1" value="ответ6"/>
                   <p>ответ6</p>
                   <div class="dot"> </div>
@@ -60,48 +60,93 @@
             <div class="question">
               <div class="question__top">
                 <h2 class="question__top-title">что вы делаете когда скучно</h2>
-                <p class="question__top-counter">Шаг <span class="current">1</span><span class="all">0</span></p>
+                <p class="question__top-counter">Шаг <span class="question__top-counter-current"> </span><span class="question__top-counter-overall"></span></p>
               </div>
-              <select name="leisure">
-                <option value="reading">Чтение книг</option>
-                <option value="sports">Спорт</option>
-                <option value="movies">Кино</option>
-                <option value="music">Музыка</option>
-                <option value="games">Игры</option>
-              </select>
+              <div class="select"> 
+                <button class="select-tab" type="button">
+                  <div class="select-text">
+                    <p class="select-subtitle">Город</p>
+                    <p class="selected">Выберите</p>
+                  </div><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="#9B9B9B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                </button>
+                <div class="options">
+                  <label class="option active">
+                    <input type="radio" name="q2" value="Санкт-Петербург"/>
+                    <div class="option-check"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <p>Санкт-Петербург</p>
+                  </label>
+                  <label class="option">
+                    <input type="radio" name="q2" value="ответ6"/>
+                    <div class="option-check"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <p>31231231</p>
+                  </label>
+                  <label class="option">
+                    <input type="radio" name="q2" value="ответ6"/>
+                    <div class="option-check"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <p>dasdadsad</p>
+                  </label>
+                  <label class="option">
+                    <input type="radio" name="q2" value="ответ6"/>
+                    <div class="option-check"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <p>dasda3123</p>
+                  </label>
+                  <label class="option">
+                    <input type="radio" name="q2" value="ответ6"/>
+                    <div class="option-check"><svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                    </div>
+                    <p>dasda</p>
+                  </label>
+                </div>
+              </div>
             </div>
             <div class="question">
               <div class="question__top">
                 <h2 class="question__top-title">Для кого вы ищете учебное заведение?</h2>
-                <p class="question__top-counter">Шаг <span class="current">1</span><span class="all">0</span></p>
+                <p class="question__top-counter">Шаг <span class="question__top-counter-current"> </span><span class="question__top-counter-overall"></span></p>
               </div>
               <div class="answers">
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q3" value="ответ1"/>
                   <p>ответ1</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q3" value="ответ2"/>
                   <p>ответ2</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q3" value="ответ3"/>
                   <p>ответ3</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q3" value="ответ4"/>
                   <p>ответ4</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q3" value="ответ5"/>
                   <p>ответ5</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q3" value="ответ6"/>
                   <p>ответ6</p>
                   <div class="dot"> </div>
@@ -111,37 +156,22 @@
             <div class="question">
               <div class="question__top">
                 <h2 class="question__top-title">Для кого вы ищете учебное заведение?</h2>
-                <p class="question__top-counter">Шаг <span class="current">1</span><span class="all">0</span></p>
+                <p class="question__top-counter">Шаг <span class="question__top-counter-current"> </span><span class="question__top-counter-overall"></span></p>
               </div>
-              <div class="answers">
-                <label>
+              <div class="answers list">
+                <label class="answers-radio">
                   <input type="radio" name="q4" value="ответ1"/>
                   <p>ответ1</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q4" value="ответ2"/>
                   <p>ответ2</p>
                   <div class="dot"> </div>
                 </label>
-                <label>
+                <label class="answers-radio">
                   <input type="radio" name="q4" value="ответ3"/>
                   <p>ответ3</p>
-                  <div class="dot"> </div>
-                </label>
-                <label>
-                  <input type="radio" name="q4" value="ответ4"/>
-                  <p>ответ4</p>
-                  <div class="dot"> </div>
-                </label>
-                <label>
-                  <input type="radio" name="q4" value="ответ5"/>
-                  <p>ответ5</p>
-                  <div class="dot"> </div>
-                </label>
-                <label>
-                  <input type="radio" name="q4" value="ответ6"/>
-                  <p>ответ6</p>
                   <div class="dot"> </div>
                 </label>
               </div>
@@ -152,7 +182,7 @@
 </svg>
                 <p>Назад</p>
               </button>
-              <button class="btn-next btn disabled" type="button"> 
+              <button class="btn-next btn disabled" type="button">
                 <p>Далее </p><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M5.5 3.5L10.5 8.5L5.5 13.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
@@ -162,6 +192,6 @@
         </div>
       </main>
     </div>
-    <script src="js/app.min.js?_v=20230422181111"> </script>
+    <script src="js/app.min.js?_v=20230422224135"> </script>
   </body>
 </html>
