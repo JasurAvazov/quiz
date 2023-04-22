@@ -1,4 +1,127 @@
 mixin main()
     main.main 
         .container 
-            h1 Main
+            .calltoaction
+                .calltoaction-top
+                    h1.calltoaction-title Подберём вуз мечты
+                    p.calltoaction-text Ответьте на 8 простых вопросов, и мы составим список наболее подходящих для вас вузов
+                .calltoaction-img
+                    img(src="@img/calltoaction.png", alt="" draggable="false")
+            .quiz
+                .question
+                    .question__top
+                        h2.question__top-title Для кого вы ищете учебное заведение?
+                        p.question__top-counter Шаг 
+                            span.current 1
+                            span.all 0
+                    .answers
+                        label
+                            input(type="radio" name="q1" value="ответ1") 
+                            p ответ1
+                            .dot 
+                        label
+                            input(type="radio" name="q1" value="ответ2") 
+                            p ответ2
+                            .dot 
+                        label
+                            input(type="radio" name="q1" value="ответ3")
+                            p ответ3
+                            .dot 
+                        label
+                            input(type="radio" name="q1" value="ответ4") 
+                            p ответ4
+                            .dot 
+                        label
+                            input(type="radio" name="q1" value="ответ5") 
+                            p ответ5
+                            .dot 
+                        label
+                            input(type="radio" name="q1" value="ответ6")
+                            p ответ6
+                            .dot 
+                .question
+                    .question__top
+                        h2.question__top-title что вы делаете когда скучно
+                        p.question__top-counter Шаг 
+                            span.current 1
+                            span.all 0
+                    select(name="leisure")
+                        option(value="reading") Чтение книг
+                        option(value="sports") Спорт
+                        option(value="movies") Кино
+                        option(value="music") Музыка
+                        option(value="games") Игры
+
+                .question
+                    .question__top
+                        h2.question__top-title Для кого вы ищете учебное заведение?
+                        p.question__top-counter Шаг 
+                            span.current 1
+                            span.all 0
+                    .answers
+                        label
+                            input(type="radio" name="q3" value="ответ1") 
+                            p ответ1
+                            .dot 
+                        label
+                            input(type="radio" name="q3" value="ответ2") 
+                            p ответ2
+                            .dot 
+                        label
+                            input(type="radio" name="q3" value="ответ3")
+                            p ответ3
+                            .dot 
+                        label
+                            input(type="radio" name="q3" value="ответ4") 
+                            p ответ4
+                            .dot 
+                        label
+                            input(type="radio" name="q3" value="ответ5") 
+                            p ответ5
+                            .dot 
+                        label
+                            input(type="radio" name="q3" value="ответ6")
+                            p ответ6
+                            .dot 
+                .question
+                    .question__top
+                        h2.question__top-title Для кого вы ищете учебное заведение?
+                        p.question__top-counter Шаг 
+                            span.current 1
+                            span.all 0
+                    .answers
+                        label
+                            input(type="radio" name="q4" value="ответ1") 
+                            p ответ1
+                            .dot 
+                        label
+                            input(type="radio" name="q4" value="ответ2") 
+                            p ответ2
+                            .dot 
+                        label
+                            input(type="radio" name="q4" value="ответ3")
+                            p ответ3
+                            .dot 
+                        label
+                            input(type="radio" name="q4" value="ответ4") 
+                            p ответ4
+                            .dot 
+                        label
+                            input(type="radio" name="q4" value="ответ5") 
+                            p ответ5
+                            .dot 
+                        label
+                            input(type="radio" name="q4" value="ответ6")
+                            p ответ6
+                            .dot 
+                .btns 
+                    button(type="button" disabled).btn-prev.btn 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M10.5 13.5L5.5 8.5L10.5 3.5" stroke="#383838" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        p Назад
+                    button(type="button" disabled).btn-next.btn 
+                        p Далее 
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5.5 3.5L10.5 8.5L5.5 13.5" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>

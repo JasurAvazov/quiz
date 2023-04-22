@@ -150,6 +150,231 @@
   padding-left: 15px;
 }
 
+.container {
+  background-color: #CAFFA0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 32px;
+  border-radius: 24px;
+  margin: 100px auto;
+}
+
+.calltoaction {
+  max-width: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.calltoaction-top {
+  margin-bottom: 81px;
+}
+
+.calltoaction-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 36px;
+  color: #383838;
+  margin-bottom: 16px;
+}
+
+.calltoaction-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #383838;
+}
+
+.quiz {
+  max-width: 576px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 24px;
+  padding: 32px;
+  position: relative;
+}
+
+.question {
+  display: none;
+}
+
+.question.active {
+  display: block;
+}
+
+.question__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.question__top-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.question__top-counter {
+  color: #9B9B9B;
+}
+
+.question__top-counter .current::after {
+  content: "/";
+  margin: 2px;
+}
+
+.question .answers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 8px;
+}
+
+.question .answers input[type=radio] {
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.question label {
+  width: calc(50% - 4px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-size: 16px;
+  font-weight: 400;
+  font-weight: bold;
+  color: #555;
+  border: 1px solid #D8D8D8;
+  padding: 18px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.question label .dot {
+  border: 1px solid #D8D8D8;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.question label input[type=radio]:checked ~ .dot {
+  border: 6px solid #383838;
+}
+
+.question select {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  bottom: 32px;
+  width: calc(100% - 64px);
+}
+
+.btns .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4px;
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: 400;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btns .btn[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.btns .btn-prev[disabled] {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.btns .btn-next {
+  background-color: #383838;
+  color: #fff;
+}
+
+.btns .btn-prev {
+  border: 1px solid #D8D8D8;
+  color: #383838;
+  pointer-events: all;
+}
+
 * {
   margin: 0;
   padding: 0;
