@@ -358,16 +358,17 @@
 .btns .btn.disabled {
   opacity: 0.5;
   cursor: default;
+  pointer-events: none;
 }
 
 .btns .btn-prev.disabled {
   opacity: 0;
-  pointer-events: none;
 }
 
 .btns .btn-next {
   background-color: #383838;
   color: #fff;
+  pointer-events: all;
 }
 
 .btns .btn-prev {

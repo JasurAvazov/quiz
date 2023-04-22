@@ -137,14 +137,15 @@
         &.disabled{
             opacity: 0.5;
             cursor: default;
+            pointer-events: none;
         }
         &-prev.disabled{
             opacity: 0;
-            pointer-events: none;
         }
         &-next{
             background-color: #383838;
             color: #fff;
+            pointer-events: all;
         }
         &-prev{
             border: 1px solid #D8D8D8;
