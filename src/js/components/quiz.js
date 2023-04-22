@@ -2,10 +2,15 @@ export function init() {
     const questions = document.querySelectorAll('.question');
     const btnNext = document.querySelector('.btn-next');
     const btnPrev = document.querySelector('.btn-prev');
+    const submit = document.querySelector('.reg-submit')
+
     const counterCurrent = document.querySelectorAll('.question__top-counter-current')
     const counterAll = document.querySelectorAll('.question__top-counter-overall')
-
     const radios = document.querySelectorAll('input[type=radio]')
+    const regInputs = document.querySelectorAll('.reg-input');
+
+    let currentQuestion = 0;
+
     radios.forEach(el => {
         el.addEventListener("click", () => {
             const parent = el.parentElement
@@ -16,6 +21,24 @@ export function init() {
         })
     })
 
+    regInputs.forEach(input => {
+        input.addEventListener('input', () => {
+            let allInputsFilled = true;
+
+            regInputs.forEach(input => {
+                if (input.value.trim() === '') {
+                    allInputsFilled = false;
+                }
+            });
+
+            if (allInputsFilled) {
+                submit.classList.remove('disabled');
+            } else {
+                submit.classList.add('disabled');
+            }
+        });
+    });
+
     counterCurrent.forEach(el => {
         el.innerHTML = 1
     })
@@ -24,8 +47,6 @@ export function init() {
     counterAll.forEach(el => {
         el.innerHTML = all
     })
-
-    let currentQuestion = 0;
 
     btnNext.addEventListener('click', () => {
         if (currentQuestion <= 0) {
@@ -38,15 +59,22 @@ export function init() {
         counterCurrent.forEach(el => {
             el.innerHTML = currentQuestion+1
         })
-        
-        if (currentQuestion === questions.length) {
-            btnPrev.classList.add('disabled')
-            sendData();
-            return;
+
+        const btns = document.querySelector('.btns')
+        let length = questions.length - 1
+        const quiz = document.querySelector('.quiz')
+
+        if (currentQuestion === length){
+            btns.classList.add('hidden')
+            quiz.style.paddingBottom = 32+'px'
+        }else{
+            btns.classList.remove('hidden')
+            quiz.style.paddingBottom = 114+'px'
         }
+
         questions[currentQuestion].classList.add('active');
         const currentAnswer = getSelectedAnswer();
-        
+
         if (!currentAnswer) {
             btnNext.classList.add('disabled')
             return;
@@ -71,6 +99,11 @@ export function init() {
 
         restoreSelectedAnswer();
     });
+
+    submit.addEventListener('click', () => {
+        sendData();
+        return;
+    })
 
     function getSelectedAnswer() {
         const currentQuestionElement = questions[currentQuestion];
@@ -125,15 +158,19 @@ export function init() {
         }
     }
 
-    
-
     function sendData() {
         const data = {};
         questions.forEach((question, index) => {
-            console.log("question",question);
             const radios = question.querySelectorAll('input[type="radio"]');
             const select = question.querySelector('select');
             const answerKey = `question-${index}`;
+            const name = document.getElementById('name').value
+            const tel = document.getElementById('tel').value
+            const email = document.getElementById('email').value
+
+            data["name"] = name;
+            data["number"] = tel;
+            data["email"] = email;
         
             if (radios.length > 0) {
                 radios.forEach((radio) => {
@@ -142,13 +179,13 @@ export function init() {
                     }
                 });
             }
-
-            
         
             if (select && select.value) {
                 data[answerKey] = select.value;
             }
         });
+
+        console.log("data =>",data);
 
         fetch('http://localhost:3000/submit', {
             method: 'POST',

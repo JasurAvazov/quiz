@@ -1,7 +1,6 @@
 export function init() {
     const selectTab = document.querySelectorAll('.select-tab')
     const select = document.querySelectorAll('.select')
-    const selected = document.querySelector('.selected')
     const selectedItem = document.querySelector('.option.active').querySelector('p')
     const items = document.querySelectorAll('.option')
     
@@ -14,7 +13,6 @@ export function init() {
             }
         })
     });
-    
 
     items.forEach(el => {
         el.addEventListener('click', () => {
@@ -23,6 +21,7 @@ export function init() {
                     all.classList.remove('active')
                 }
             })
+            const selected = el.parentElement.parentElement.querySelector('.selected')
             selected.innerHTML = el.querySelector('p').innerHTML
             el.classList.add('active')
         })

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230422232734">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230423013618">
     <title>Document</title>
   </head>
   <body> 
@@ -342,33 +342,15 @@
                 <h2 class="question__top-title">Ваша подборка готова! 🥳 Куда нам отправить её?</h2>
                 <p class="question__top-counter">Шаг <span class="question__top-counter-current"> </span><span class="question__top-counter-overall"></span></p>
               </div>
-              <div class="answers">
-                <label class="answers-radio">
-                  <input type="radio" name="q8" value="Как можно быстрее"/>
-                  <p>Как можно быстрее</p>
-                  <div class="dot"> </div>
-                </label>
-                <label class="answers-radio">
-                  <input type="radio" name="q8" value="Месяц"/>
-                  <p>Месяц</p>
-                  <div class="dot"> </div>
-                </label>
-                <label class="answers-radio">
-                  <input type="radio" name="q8" value="Квартал"/>
-                  <p>Квартал</p>
-                  <div class="dot"> </div>
-                </label>
-                <label class="answers-radio">
-                  <input type="radio" name="q8" value="Полгода"/>
-                  <p>Полгода</p>
-                  <div class="dot"> </div>
-                </label>
-                <label class="answers-radio">
-                  <input type="radio" name="q8" value="Год"/>
-                  <p>Год</p>
-                  <div class="dot"> </div>
-                </label>
+              <div class="reg">
+                <input class="reg-input" type="text" id="name" placeholder="Как вас зовут?" required="required"/>
+                <input class="reg-input" type="tel" id="tel" placeholder="Номер телефона" required="required"/>
+                <input class="reg-input" type="email" id="email" placeholder="E-mail" required="required"/>
               </div>
+              <button class="reg-submit disabled" type="button">
+                <p>Получить подборку</p>
+              </button>
+              <p class="reg-privacy">Нажимая на кнопку, вы даете согласие на обработку своих <a href="#">Персональных данных</a></p>
             </div>
             <div class="btns"> 
               <button class="btn-prev btn disabled" type="button"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -386,6 +368,6 @@
         </div>
       </main>
     </div>
-    <script src="js/app.min.js?_v=20230422232734"> </script>
+    <script src="js/app.min.js?_v=20230423013618"> </script>
   </body>
 </html>

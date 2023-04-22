@@ -286,28 +286,13 @@ mixin quiz()
                         p.question__top-counter Шаг 
                             span.question__top-counter-current 
                             span.question__top-counter-overall
-                    .answers
-                        label.answers-radio
-                            input(type="radio" name="q8" value="Как можно быстрее") 
-                            p Как можно быстрее
-                            .dot 
-                        label.answers-radio
-                            input(type="radio" name="q8" value="Месяц") 
-                            p Месяц
-                            .dot 
-                        label.answers-radio
-                            input(type="radio" name="q8" value="Квартал")
-                            p Квартал
-                            .dot 
-                        label.answers-radio
-                            input(type="radio" name="q8" value="Полгода") 
-                            p Полгода
-                            .dot 
-                        label.answers-radio
-                            input(type="radio" name="q8" value="Год") 
-                            p Год
-                            .dot 
-
+                    .reg
+                        input(type="text" id="name" placeholder="Как вас зовут?" required).reg-input
+                        input(type="tel" id="tel" placeholder="Номер телефона" required).reg-input
+                        input(type="email" id="email" placeholder="E-mail" required).reg-input
+                    button(type="button").reg-submit.disabled
+                        p Получить подборку
+                    p.reg-privacy Нажимая на кнопку, вы даете согласие на обработку своих <a href="#">Персональных данных</a>
                 .btns 
                     button(type="button").btn-prev.btn.disabled
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

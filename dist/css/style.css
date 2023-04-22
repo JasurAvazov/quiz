@@ -1,5 +1,5 @@
 @font-face {
-  font-family: OnestBlack;
+  font-family: Onest;
   font-display: swap;
   src: url("../fonts/OnestBlack.woff2") format("woff2"), url("../fonts/OnestBlack.woff") format("woff");
   font-weight: 900;
@@ -7,23 +7,7 @@
 }
 
 @font-face {
-  font-family: OnestBlack;
-  font-display: swap;
-  src: url("../fonts/OnestBlack.woff2") format("woff2"), url("../fonts/OnestBlack.woff") format("woff");
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: OnestBold;
-  font-display: swap;
-  src: url("../fonts/OnestBold.woff2") format("woff2"), url("../fonts/OnestBold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: OnestLight;
+  font-family: Onest;
   font-display: swap;
   src: url("../fonts/OnestLight.woff2") format("woff2"), url("../fonts/OnestLight.woff") format("woff");
   font-weight: 300;
@@ -31,15 +15,7 @@
 }
 
 @font-face {
-  font-family: OnestLight;
-  font-display: swap;
-  src: url("../fonts/OnestLight.woff2") format("woff2"), url("../fonts/OnestLight.woff") format("woff");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: OnestBold;
+  font-family: Onest;
   font-display: swap;
   src: url("../fonts/OnestBold.woff2") format("woff2"), url("../fonts/OnestBold.woff") format("woff");
   font-weight: 700;
@@ -47,23 +23,7 @@
 }
 
 @font-face {
-  font-family: OnestMedium;
-  font-display: swap;
-  src: url("../fonts/OnestMedium.woff2") format("woff2"), url("../fonts/OnestMedium.woff") format("woff");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: OnestRegular;
-  font-display: swap;
-  src: url("../fonts/OnestRegular.woff2") format("woff2"), url("../fonts/OnestRegular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: OnestThin;
+  font-family: Onest;
   font-display: swap;
   src: url("../fonts/OnestThin.woff2") format("woff2"), url("../fonts/OnestThin.woff") format("woff");
   font-weight: 100;
@@ -71,15 +31,7 @@
 }
 
 @font-face {
-  font-family: OnestThin;
-  font-display: swap;
-  src: url("../fonts/OnestThin.woff2") format("woff2"), url("../fonts/OnestThin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: OnestRegular;
+  font-family: Onest;
   font-display: swap;
   src: url("../fonts/OnestRegular.woff2") format("woff2"), url("../fonts/OnestRegular.woff") format("woff");
   font-weight: 400;
@@ -87,7 +39,7 @@
 }
 
 @font-face {
-  font-family: OnestMedium;
+  font-family: Onest;
   font-display: swap;
   src: url("../fonts/OnestMedium.woff2") format("woff2"), url("../fonts/OnestMedium.woff") format("woff");
   font-weight: 500;
@@ -257,7 +209,7 @@ main {
           flex-direction: row;
   background-color: #F5F5F5;
   border: 1px solid transparent;
-  padding: 18px 60px 18px 16px;
+  padding: 18px 56px 18px 16px;
   border-radius: 16px;
   cursor: pointer;
   position: relative;
@@ -457,18 +409,104 @@ main {
   padding: 16px;
 }
 
-.question select {
-  width: 100%;
-  height: 50px;
-  padding: 10px;
-  font-size: 20px;
-  border-radius: 10px;
-  border: 1px solid #D8D8D8;
-  background-color: #fff;
+.question .reg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 8px;
 }
 
-.question select option {
-  padding: 10px;
+.question .reg-input {
+  padding: 18px 16px;
+  background-color: #F5F5F5;
+  border-radius: 16px;
+  border: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.question .reg-input::-webkit-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.question .reg-input::-moz-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.question .reg-input:-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.question .reg-input::-ms-input-placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.question .reg-input::placeholder {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.question .reg-submit {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 36px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  border-radius: 16px;
+  background-color: #383838;
+  color: #fff;
+  pointer-events: all;
+  cursor: pointer;
+  margin-top: 8px;
+  pointer-events: all;
+}
+
+.question .reg-submit.disabled {
+  pointer-events: none;
+}
+
+.question .reg-privacy {
+  width: 100%;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #9B9B9B;
+  margin-top: 8px;
+}
+
+.question .reg-privacy a {
+  color: #383838;
 }
 
 .btns {
@@ -481,6 +519,10 @@ main {
   position: absolute;
   bottom: 32px;
   width: calc(100% - 64px);
+}
+
+.btns.hidden {
+  display: none;
 }
 
 .btns .btn {
@@ -528,7 +570,7 @@ main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Onest";
 }
 
 *:focus,
