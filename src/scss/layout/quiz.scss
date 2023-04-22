@@ -92,15 +92,19 @@ main{
             align-items: center;
             flex-wrap: wrap;
             flex-direction: row;
-            font-size: 16px;
-            font-weight: 400;
-            font-weight: bold;
-            color: #555;
             background-color: #F5F5F5;
             border: 1px solid transparent;
-            padding: 18px;
+            padding: 18px 60px 18px 16px;
             border-radius: 16px;
             cursor: pointer;
+            position: relative;
+            p{
+                font-style: normal;
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 20px;
+                color: #383838;
+            }
             &.active{
                 border-color: #383838;
                 background-color: white;
@@ -111,6 +115,10 @@ main{
                 width: 20px;
                 height: 20px;
                 border-radius: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                right: 16px;
             }
             input[type="radio"]:checked {
                 & ~ .dot{

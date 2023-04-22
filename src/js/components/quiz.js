@@ -130,6 +130,7 @@ export function init() {
     function sendData() {
         const data = {};
         questions.forEach((question, index) => {
+            console.log("question",question);
             const radios = question.querySelectorAll('input[type="radio"]');
             const select = question.querySelector('select');
             const answerKey = `question-${index}`;
@@ -141,13 +142,13 @@ export function init() {
                     }
                 });
             }
+
+            
         
             if (select && select.value) {
                 data[answerKey] = select.value;
             }
         });
-
-        console.log("data =>",data);
 
         fetch('http://localhost:3000/submit', {
             method: 'POST',

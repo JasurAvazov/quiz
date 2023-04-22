@@ -1,144 +1,96 @@
 @font-face {
-  font-family: Montserrat;
+  font-family: OnestBlack;
   font-display: swap;
-  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
+  src: url("../fonts/OnestBlack.woff2") format("woff2"), url("../fonts/OnestBlack.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: OnestBlack;
   font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
-  font-weight: 700;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Black.woff2") format("woff2"), url("../fonts/Montserrat-Black.woff") format("woff");
+  src: url("../fonts/OnestBlack.woff2") format("woff2"), url("../fonts/OnestBlack.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: OnestBold;
   font-display: swap;
-  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-ExtraBold.woff2") format("woff2"), url("../fonts/Montserrat-ExtraBold.woff") format("woff");
-  font-weight: 800;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
-  font-weight: 200;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff");
+  src: url("../fonts/OnestBold.woff2") format("woff2"), url("../fonts/OnestBold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: OnestLight;
   font-display: swap;
-  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+  src: url("../fonts/OnestLight.woff2") format("woff2"), url("../fonts/OnestLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: OnestLight;
   font-display: swap;
-  src: url("../fonts/Montserrat-Light.woff2") format("woff2"), url("../fonts/Montserrat-Light.woff") format("woff");
+  src: url("../fonts/OnestLight.woff2") format("woff2"), url("../fonts/OnestLight.woff") format("woff");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: OnestBold;
   font-display: swap;
-  src: url("../fonts/Montserrat-ExtraLight.woff2") format("woff2"), url("../fonts/Montserrat-ExtraLight.woff") format("woff");
-  font-weight: 200;
+  src: url("../fonts/OnestBold.woff2") format("woff2"), url("../fonts/OnestBold.woff") format("woff");
+  font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: OnestMedium;
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/OnestMedium.woff2") format("woff2"), url("../fonts/OnestMedium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: OnestRegular;
   font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
+  src: url("../fonts/OnestRegular.woff2") format("woff2"), url("../fonts/OnestRegular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: Montserrat;
+  font-family: OnestThin;
   font-display: swap;
-  src: url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff");
+  src: url("../fonts/OnestThin.woff2") format("woff2"), url("../fonts/OnestThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OnestThin;
+  font-display: swap;
+  src: url("../fonts/OnestThin.woff2") format("woff2"), url("../fonts/OnestThin.woff") format("woff");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OnestRegular;
+  font-display: swap;
+  src: url("../fonts/OnestRegular.woff2") format("woff2"), url("../fonts/OnestRegular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: OnestMedium;
+  font-display: swap;
+  src: url("../fonts/OnestMedium.woff2") format("woff2"), url("../fonts/OnestMedium.woff") format("woff");
   font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-SemiBold.woff2") format("woff2"), url("../fonts/Montserrat-SemiBold.woff") format("woff");
-  font-weight: 600;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Thin.woff") format("woff");
-  font-weight: 100;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: Montserrat;
-  font-display: swap;
-  src: url("../fonts/Montserrat-Thin.woff2") format("woff2"), url("../fonts/Montserrat-Thin.woff") format("woff");
-  font-weight: 100;
   font-style: normal;
 }
 
@@ -303,15 +255,20 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  font-size: 16px;
-  font-weight: 400;
-  font-weight: bold;
-  color: #555;
   background-color: #F5F5F5;
   border: 1px solid transparent;
-  padding: 18px;
+  padding: 18px 60px 18px 16px;
   border-radius: 16px;
   cursor: pointer;
+  position: relative;
+}
+
+.question .answers-radio p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #383838;
 }
 
 .question .answers-radio.active {
@@ -325,6 +282,12 @@ main {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 16px;
 }
 
 .question .answers-radio input[type=radio]:checked ~ .dot {

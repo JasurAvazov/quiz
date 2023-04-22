@@ -16,32 +16,32 @@ mixin quiz()
                             span.question__top-counter-overall
                     .answers
                         label.answers-radio
-                            input(type="radio" name="q1" value="ответ1") 
-                            p ответ1
+                            input(type="radio" name="q1" value="Себе") 
+                            p Себе
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q1" value="ответ2") 
-                            p ответ2
+                            input(type="radio" name="q1" value="Супругу/супруге") 
+                            p Супругу/супруге
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q1" value="ответ3")
-                            p ответ3
+                            input(type="radio" name="q1" value="Родственнику")
+                            p Родственнику
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q1" value="ответ4") 
-                            p ответ4
+                            input(type="radio" name="q1" value="Коллеге") 
+                            p Коллеге
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q1" value="ответ5") 
-                            p ответ5
+                            input(type="radio" name="q1" value="Ребенку") 
+                            p Ребенку
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q1" value="ответ6")
-                            p ответ6
+                            input(type="radio" name="q1" value="Другое")
+                            p Другое
                             .dot 
                 .question
                     .question__top
-                        h2.question__top-title что вы делаете когда скучно
+                        h2.question__top-title В каком городе планируете поступать?
                         p.question__top-counter Шаг 
                             span.question__top-counter-current 
                             span.question__top-counter-overall
@@ -62,84 +62,252 @@ mixin quiz()
                                     </svg>
                                 p Санкт-Петербург
                             label.option
-                                input(type="radio" name="q2" value="ответ6")
+                                input(type="radio" name="q2" value="Москва")
                                 .option-check
                                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                p 31231231
+                                p Москва
                             label.option
-                                input(type="radio" name="q2" value="ответ6")
+                                input(type="radio" name="q2" value="Новосибирск")
                                 .option-check
                                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                p dasdadsad
+                                p Новосибирск
                             label.option
-                                input(type="radio" name="q2" value="ответ6")
+                                input(type="radio" name="q2" value="Нижний новгород")
                                 .option-check
                                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                p dasda3123
+                                p Нижний новгород
                             label.option
-                                input(type="radio" name="q2" value="ответ6")
+                                input(type="radio" name="q2" value="Ростов-на-Дону")
                                 .option-check
                                     <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                     </svg>
-                                p dasda
+                                p Ростов-на-Дону
+                            label.option
+                                input(type="radio" name="q2" value="Екатеринбург")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p Екатеринбург
+                            label.option
+                                input(type="radio" name="q2" value="Краснодар")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p Краснодар
 
                 .question
                     .question__top
-                        h2.question__top-title Для кого вы ищете учебное заведение?
+                        h2.question__top-title Какое образование уже есть?
                         p.question__top-counter Шаг 
                             span.question__top-counter-current 
                             span.question__top-counter-overall
                     .answers
                         label.answers-radio
-                            input(type="radio" name="q3" value="ответ1") 
-                            p ответ1
+                            input(type="radio" name="q3" value="9 классов") 
+                            p 9 классов
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q3" value="ответ2") 
-                            p ответ2
+                            input(type="radio" name="q3" value="Колледж/техникум") 
+                            p Колледж/техникум
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q3" value="ответ3")
-                            p ответ3
+                            input(type="radio" name="q3" value="11 классов")
+                            p 11 классов
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q3" value="ответ4") 
-                            p ответ4
+                            input(type="radio" name="q3" value="11 классов") 
+                            p 11 классов
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q3" value="ответ5") 
-                            p ответ5
+                            input(type="radio" name="q3" value="Училище") 
+                            p Училище
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q3" value="ответ6")
-                            p ответ6
+                            input(type="radio" name="q3" value="Неоконченное высшее")
+                            p Неоконченное высшее
                             .dot 
+
                 .question
                     .question__top
-                        h2.question__top-title Для кого вы ищете учебное заведение?
+                        h2.question__top-title Куда планируете поступать?
                         p.question__top-counter Шаг 
                             span.question__top-counter-current 
                             span.question__top-counter-overall
                     .answers.list
                         label.answers-radio
-                            input(type="radio" name="q4" value="ответ1") 
-                            p ответ1
+                            input(type="radio" name="q4" value="Вуз") 
+                            p Вуз
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q4" value="ответ2") 
-                            p ответ2
+                            input(type="radio" name="q4" value="Колледж/техникум") 
+                            p Колледж/техникум
                             .dot 
                         label.answers-radio
-                            input(type="radio" name="q4" value="ответ3")
-                            p ответ3
+                            input(type="radio" name="q4" value="Училище")
+                            p Училище
                             .dot 
+
+                .question
+                    .question__top
+                        h2.question__top-title Какую форму обучения предпочитаете?
+                        p.question__top-counter Шаг 
+                            span.question__top-counter-current 
+                            span.question__top-counter-overall
+                    .answers.list
+                        label.answers-radio
+                            input(type="radio" name="q5" value="Очную") 
+                            p Очную
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q5" value="Заочную") 
+                            p Заочную
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q5" value="Дистанционную")
+                            p Дистанционную
+                            .dot 
+
+                .question
+                    .question__top
+                        h2.question__top-title Рассматриваете платное обучение?
+                        p.question__top-counter Шаг 
+                            span.question__top-counter-current 
+                            span.question__top-counter-overall
+                    .answers.list
+                        label.answers-radio
+                            input(type="radio" name="q6" value="Нет, только бюджет") 
+                            p Нет, только бюджет
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q6" value="Да, планирую учиться платно") 
+                            p Да, планирую учиться платно
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q6" value="Возможны оба варианта")
+                            p Возможны оба варианта
+                            .dot 
+
+                .question
+                    .question__top
+                        h2.question__top-title В каком городе планируете поступать?
+                        p.question__top-counter Шаг 
+                            span.question__top-counter-current 
+                            span.question__top-counter-overall
+                    .select
+                        button(type="button").select-tab
+                            .select-text
+                                p.select-subtitle Специальность
+                                p.selected Выберите
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.25 7.5L10 13.75L3.75 7.5" stroke="#9B9B9B" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        .options
+                            label.option.active
+                                input(type="radio" name="q7" value="Экономика")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p Экономика
+                            label.option
+                                input(type="radio" name="q7" value="Философия")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p Философия
+                            label.option
+                                input(type="radio" name="q7" value="Социология")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p Социология
+                            label.option
+                                input(type="radio" name="q7" value="Юриспруденция")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p Юриспруденция
+                            label.option
+                                input(type="radio" name="q7" value="Менеджмент")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p Менеджмент
+                            label.option
+                                input(type="radio" name="q7" value="Екатеринбург")
+                                .option-check
+                                    <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M10.8125 1.9375L4.6875 8.0625L1.625 5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                p Екатеринбург
+                .question
+                    .question__top
+                        h2.question__top-title Как скоро планируете поступать?
+                        p.question__top-counter Шаг 
+                            span.question__top-counter-current 
+                            span.question__top-counter-overall
+                    .answers
+                        label.answers-radio
+                            input(type="radio" name="q8" value="Как можно быстрее") 
+                            p Как можно быстрее
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q8" value="Месяц") 
+                            p Месяц
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q8" value="Квартал")
+                            p Квартал
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q8" value="Полгода") 
+                            p Полгода
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q8" value="Год") 
+                            p Год
+                            .dot 
+                .question
+                    .question__top
+                        h2.question__top-title Ваша подборка готова! 🥳 Куда нам отправить её?
+                        p.question__top-counter Шаг 
+                            span.question__top-counter-current 
+                            span.question__top-counter-overall
+                    .answers
+                        label.answers-radio
+                            input(type="radio" name="q8" value="Как можно быстрее") 
+                            p Как можно быстрее
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q8" value="Месяц") 
+                            p Месяц
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q8" value="Квартал")
+                            p Квартал
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q8" value="Полгода") 
+                            p Полгода
+                            .dot 
+                        label.answers-radio
+                            input(type="radio" name="q8" value="Год") 
+                            p Год
+                            .dot 
+
                 .btns 
                     button(type="button").btn-prev.btn.disabled
                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
